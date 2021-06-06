@@ -1,5 +1,9 @@
 package calc
 
-func Add(i int, j int) int {
-	return i + j
+func Add(numbers ...int) int {
+	result := 0
+	for _, num := range numbers {
+		result += num
+	}
+	return result
 }
